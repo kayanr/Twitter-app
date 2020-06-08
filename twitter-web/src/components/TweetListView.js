@@ -4,7 +4,7 @@ import { TweetComponent } from "./TweetComponent";
 export function TweetListView(props) {
   let body = [];
 
-  props.tweet.forEach((tweet) => {
+  props.tweets.forEach((tweet) => {
     body.push(<TweetComponent tweet={tweet} />);
   });
 
