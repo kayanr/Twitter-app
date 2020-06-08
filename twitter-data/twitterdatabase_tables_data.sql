@@ -6,7 +6,9 @@ use twitter_db;
 
 #drop table tweet;
 
-CREATE TABLE `tweet` (
+select * from tweets;
+
+CREATE TABLE `tweets` (
   `id` smallint unsigned NOT NULL AUTO_INCREMENT,
   `user_name` varchar(45) NOT NULL,
   `user_handle` varchar(45) NOT NULL,
@@ -16,7 +18,7 @@ CREATE TABLE `tweet` (
 ) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=utf8;
 
 #inserting the example tweets used by instructor
-INSERT INTO `twitter_db`.`tweet`
+INSERT INTO `twitter_db`.`tweets`
 (`id`,
 `user_name`,
 `user_handle`,
@@ -29,4 +31,4 @@ VALUES
 (4, 'John Smith','@notRussianBot', 'https://cdn.pixabay.com/photo/2017/03/14/21/00/american-flag-2144392__340.png', 'Who censored Trump???');
 
 
-select * from `twitter_db`.`tweet`;
+select * from `twitter_db`.`tweets`;
