@@ -6,7 +6,12 @@ export function TweetComponent(props) {
     <>
       <div id="content">
         <div id="timage">
-          <img src={props.tweet.userImageUrl} width="100" height="40" />{" "}
+          <img
+            src={props.tweet.userImageUrl}
+            width="100"
+            height="40"
+            alt="logo for tweet"
+          />{" "}
         </div>
         <div id="tuser">
           {" "}
