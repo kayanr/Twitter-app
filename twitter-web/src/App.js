@@ -8,15 +8,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       tweets: [],
-      // mode: "VIEW",
     };
-
-    // this.toggleMode = this.toggleMode.bind(this);
   }
-
-  // toggleMode() {
-  //   this.setState({ mode: this.state.mode === "VIEW" ? "EDIT" : "VIEW" });
-  // }
 
   componentDidMount() {
     fetch("http://localhost:8080/tweets")
@@ -31,13 +24,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Twitter</h1>
+        <h1 align="left">Twitter</h1>
         <div>
-          {/* <div hidden={this.setState.mode === "EDIT"}> */}
-          <TweetListView
-            tweets={this.state.tweets}
-            // toggle={this.toggleMode}
-          />
+          <TweetListView tweets={this.state.tweets} />
         </div>
       </div>
     );

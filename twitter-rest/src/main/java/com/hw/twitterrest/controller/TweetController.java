@@ -35,7 +35,4 @@ public class TweetController {
         return tweetRepository.findById(id);
     }
 
-
-
-
 }
